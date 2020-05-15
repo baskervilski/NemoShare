@@ -28,17 +28,16 @@ def upload():
     # flask.send_files('')
     return f"""<html>
                <body>
-                  <form action = { url_for('upload_file')} method = "POST" 
-                     enctype = "multipart/form-data">
-                     <input type = "file" name = "file" />
-                     <input type = "submit"/>
+                  <form action={ url_for('upload_file')} method="POST" enctype="multipart/form-data">
+                     <input type="file" name="file" />
+                     <input type="submit"/>
                   </form>   
                </body>
             </html>
             """
 
 
-@app.route('/uploader', methods = ['GET', 'POST'])
+@app.route('/uploader', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
         f = request.files['file']
