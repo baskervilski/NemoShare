@@ -14,7 +14,7 @@ app.config['UPLOAD_FOLDER'] = uploads_folder
 
 @app.route('/')
 def main():
-    return "NemoShare, FTW!"
+    return "NemoShare, FTW! Changed a bit!"
 
 
 @app.route('/download/<filename>')

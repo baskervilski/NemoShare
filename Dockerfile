@@ -8,5 +8,5 @@ RUN apk --update add --virtual build-dependencies libffi-dev openssl-dev python-
   && pip install -r requirements.txt \
   && apk del build-dependencies
 EXPOSE 5001 
-ENTRYPOINT [ "python" ] 
-CMD [ "nemo_share.py" ]
+#ENTRYPOINT [ "gunicorn" ] 
+CMD ["gunicorn", "--bind", "0.0.0.0:5057", "nemo_share:app"]
