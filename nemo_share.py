@@ -28,7 +28,7 @@ def upload():
     # flask.send_files('')
     return f"""<html>
                <body>
-                  <form action={ url_for('upload_file')} method="POST" enctype="multipart/form-data">
+                  <form action={ url_for('upload_file') } method="POST" enctype="multipart/form-data">
                      <input type="file" name="file" />
                      <input type="submit"/>
                   </form>   
