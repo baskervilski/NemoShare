@@ -9,9 +9,6 @@ PORT = 5057
 
 app = Flask(__name__)
 
-os.mkdir(uploads_folder, exist_ok=True)
-os.mkdir(downloads_folder, exist_ok=True)
-
 app.config['UPLOAD_FOLDER'] = uploads_folder
 
 
