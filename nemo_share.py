@@ -5,8 +5,6 @@ from werkzeug.utils import secure_filename
 uploads_folder = './inbox/'
 downloads_folder = './outbox/'
 
-PORT = 5057
-
 app = Flask(__name__)
 
 app.config['UPLOAD_FOLDER'] = uploads_folder
@@ -14,7 +12,7 @@ app.config['UPLOAD_FOLDER'] = uploads_folder
 
 @app.route('/')
 def main():
-    return "NemoShare, FTW! Changed a bit!"
+    return "NemoShare, FTW! Changed a bit! And a bit more"
 
 
 @app.route('/download/<filename>')
@@ -46,4 +44,4 @@ def upload_file():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=PORT)
+    app.run(host="0.0.0.0", port=8000)

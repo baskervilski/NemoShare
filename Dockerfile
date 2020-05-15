@@ -9,4 +9,4 @@ RUN apk --update add --virtual build-dependencies libffi-dev openssl-dev python-
   && apk del build-dependencies
 EXPOSE 5001 
 #ENTRYPOINT [ "gunicorn" ] 
-CMD ["gunicorn", "--bind", "0.0.0.0:5057", "nemo_share:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "nemo_share:app"]
