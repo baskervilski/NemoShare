@@ -20,7 +20,7 @@ def main():
 @app.route('/download/<filename>')
 def download(filename):
     # flask.send_files('')
-    return send_file('../data/' + filename)
+    return send_file(downloads_folder + filename)
 
 
 @app.route('/upload')
