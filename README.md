@@ -25,8 +25,8 @@ Of course, you need to setup an independent app that reads, processes and writes
 ## Usage
 
 1. The user navigates to the `<your_server_url>/upload` endpoint, where he uploads the file(s) he wants to have processed.
-- as mentioned above, it's up to you to run the listening and data processing app, which writes back the results to the sharing outbox folder.
-2. The user downloads the files using the `<your_server_url>/download/<result_filename>`.
-- in this simplest version of the app, the user needs to know the exact filename in advance, there are no fancy interfaces at this point, but feel free to develop one.
+  - as mentioned above, it's up to you to run the listening and data processing app, which writes back the results to the sharing outbox folder.
+2. The user downloads the files using the `<your_server_url>/download/<result_filename>` URL.
+  - in this simplest version of the app, the user needs to know the exact filename in advance, there are no fancy interfaces at this point, but feel free to develop one.
 
 Share & enjoy!
